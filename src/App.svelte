@@ -3,6 +3,7 @@
   import JsonInput from "./lib/JsonInput.svelte";
   import svelteLogo from './assets/svelte.svg'
   import viteLogo from '/vite.svg'
+  import ErrorAlert from "./lib/ErrorAlert.svelte";
 
   const copyToClipboard = () => {
     window.postMessage('copyToClipboard')
@@ -23,6 +24,7 @@
     <JsonInput />
     <FakerOutput />
   </div>
+  <ErrorAlert></ErrorAlert>
 </main>
 
 <style>
