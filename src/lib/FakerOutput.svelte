@@ -21,6 +21,10 @@
         data = data.replaceAll('"faker', 'faker');
         data = data.replaceAll(')"', ')')
         data = data.replaceAll(']"', ']')
+        data = data.replaceAll('\\"', '"')
+        console.log(data)
+        
+
 
       }
     } catch (e) {
